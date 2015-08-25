@@ -16,6 +16,7 @@
 		2E9B59CC1AE5D42D00C8FBB0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E9B59CB1AE5D42D00C8FBB0 /* Images.xcassets */; };
 		2E9B59CF1AE5D42D00C8FBB0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E9B59CD1AE5D42D00C8FBB0 /* LaunchScreen.xib */; };
 		2E9B59DB1AE5D42D00C8FBB0 /* AppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E9B59DA1AE5D42D00C8FBB0 /* AppTests.m */; };
+		2EEDBA421B54BAFE00DBB70F /* CameraScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEDBA411B54BAFE00DBB70F /* CameraScene.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,8 @@
 		2E9B59D41AE5D42D00C8FBB0 /* AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E9B59D91AE5D42D00C8FBB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E9B59DA1AE5D42D00C8FBB0 /* AppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppTests.m; sourceTree = "<group>"; };
+		2EEDBA401B54BAFE00DBB70F /* CameraScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraScene.h; sourceTree = "<group>"; };
+		2EEDBA411B54BAFE00DBB70F /* CameraScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraScene.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +93,8 @@
 				2E9B59BE1AE5D42D00C8FBB0 /* AppDelegate.m */,
 				2E9B59C01AE5D42D00C8FBB0 /* GameScene.h */,
 				2E9B59C11AE5D42D00C8FBB0 /* GameScene.m */,
+				2EEDBA401B54BAFE00DBB70F /* CameraScene.h */,
+				2EEDBA411B54BAFE00DBB70F /* CameraScene.m */,
 				2E9B59C31AE5D42D00C8FBB0 /* GameScene.sks */,
 				2E9B59C51AE5D42D00C8FBB0 /* GameViewController.h */,
 				2E9B59C61AE5D42D00C8FBB0 /* GameViewController.m */,
@@ -228,6 +233,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EEDBA421B54BAFE00DBB70F /* CameraScene.m in Sources */,
 				2E9B59C71AE5D42D00C8FBB0 /* GameViewController.m in Sources */,
 				2E9B59BF1AE5D42D00C8FBB0 /* AppDelegate.m in Sources */,
 				2E9B59C21AE5D42D00C8FBB0 /* GameScene.m in Sources */,
@@ -426,6 +432,7 @@
 				2E9B59E01AE5D42D00C8FBB0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2E9B59E11AE5D42D00C8FBB0 /* Build configuration list for PBXNativeTarget "AppTests" */ = {
 			isa = XCConfigurationList;
@@ -434,6 +441,7 @@
 				2E9B59E31AE5D42D00C8FBB0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

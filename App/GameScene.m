@@ -7,43 +7,42 @@
 //
 
 #import "GameScene.h"
-
-@implementation GameScene
+#import "CameraScene.h"
+@implementation GameScene {
+    
+   
+}
 
 -(void)didMoveToView:(SKView *)view {
-    /* Setup your scene here */
-    SKLabelNode *myLabel = [SKLabelNode labelNodeWithFontNamed:@"Chalkduster"];
+    SKLabelNode  *Title = [SKLabelNode labelNodeWithFontNamed:@"Chalkduster"];
+    SKLabelNode  *StartButton = [SKLabelNode labelNodeWithFontNamed:@"Chalkduster"];
+    StartButton.text = @"はじめる";
+    StartButton.position = CGPointMake(self.frame.size.width /2, self.frame.size.height / 2 - 100);
+    StartButton.fontColor = [SKColor whiteColor];
+    Title.text = @"Title";
+    Title.fontColor = [SKColor whiteColor];
+    Title.fontSize = 50;
+    Title.position = CGPointMake(self.frame.size.width / 2, self.frame.size.height / 2 + 150);
+    [self addChild:Title];
+    [self addChild:StartButton];
     
-    myLabel.text = @"Hello, World!";
-    myLabel.fontSize = 65;
-    myLabel.position = CGPointMake(CGRectGetMidX(self.frame),
-                                   CGRectGetMidY(self.frame));
+    SKAction* fadein = [SKAction fadeInWithDuration:0.8];
+    SKAction* fadeout = [SKAction fadeOutWithDuration:0.8];
+    NSArray * actions = [NSArray arrayWithObjects:fadeout,fadein,nil];
+    SKAction* fadeinout = [SKAction sequence:actions];
+    [StartButton runAction:[SKAction repeatActionForever:fadeinout]];
     
-    [self addChild:myLabel];
+
 }
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
-    /* Called when a touch begins */
+    CameraScene *scene = [[CameraScene alloc]initWithSize:self.size];
+    SKTransition *transition = [SKTransition crossFadeWithDuration:2];
+    [self.view presentScene:scene transition:transition];
     
-    for (UITouch *touch in touches) {
-        CGPoint location = [touch locationInNode:self];
-        
-        SKSpriteNode *sprite = [SKSpriteNode spriteNodeWithImageNamed:@"Spaceship"];
-        
-        sprite.xScale = 0.5;
-        sprite.yScale = 0.5;
-        sprite.position = location;
-        
-        SKAction *action = [SKAction rotateByAngle:M_PI duration:1];
-        
-        [sprite runAction:[SKAction repeatActionForever:action]];
-        
-        [self addChild:sprite];
-    }
 }
-
 -(void)update:(CFTimeInterval)currentTime {
-    /* Called before each frame is rendered */
+
 }
 
 @end
