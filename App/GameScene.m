@@ -7,7 +7,7 @@
 //
 
 #import "GameScene.h"
-#import "CameraScene.h"
+#import "GameViewController.h"
 @implementation GameScene {
     
    
@@ -36,7 +36,7 @@
 }
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
-    CameraScene *scene = [[CameraScene alloc]initWithSize:self.size];
+    GameScene *scene = [[GameScene alloc]initWithSize:self.size];
     SKTransition *transition = [SKTransition crossFadeWithDuration:2];
     [self.view presentScene:scene transition:transition];
     
