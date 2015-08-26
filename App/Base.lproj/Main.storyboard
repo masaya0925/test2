@@ -22,7 +22,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="LVB-YS-i5n" kind="presentation" id="JFr-XI-bJ2"/>
+                                    <segue destination="LVB-YS-i5n" kind="show" id="oNi-es-D4T"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="            タイトル" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yl4-GS-Z03">
@@ -53,8 +53,8 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZyR-5h-m0e">
-                                <rect key="frame" x="42" y="438" width="57" height="34"/>
-                                <state key="normal" title="Start">
+                                <rect key="frame" x="16" y="406" width="57" height="34"/>
+                                <state key="normal" title="Camera">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -62,7 +62,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PgA-ZQ-TAX">
-                                <rect key="frame" x="219" y="440" width="44" height="30"/>
+                                <rect key="frame" x="96" y="408" width="44" height="30"/>
                                 <state key="normal" title="Album">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -71,10 +71,10 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="icg-fg-8ys">
-                                <rect key="frame" x="25" y="28" width="270" height="400"/>
+                                <rect key="frame" x="-13" y="0.0" width="333" height="400"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KJo-vu-euu">
-                                <rect key="frame" x="224" y="467" width="34" height="30"/>
+                                <rect key="frame" x="101" y="437" width="34" height="30"/>
                                 <state key="normal" title="clear">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -83,17 +83,8 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Axl-rQ-D95">
-                                <rect key="frame" x="25" y="28" width="270" height="400"/>
+                                <rect key="frame" x="-6" y="0.0" width="326" height="400"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jB4-Tt-KT9">
-                                <rect key="frame" x="145" y="467" width="30" height="30"/>
-                                <state key="normal" title="Red">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="Redcolor:" destination="LVB-YS-i5n" eventType="touchUpInside" id="XxH-Ux-tKb"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q6B-ip-Loq">
                                 <rect key="frame" x="25" y="533" width="270" height="25"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -101,7 +92,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FHh-5Z-edA">
-                                <rect key="frame" x="45" y="467" width="51" height="30"/>
+                                <rect key="frame" x="19" y="437" width="51" height="30"/>
                                 <state key="normal" title="Save">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -109,6 +100,55 @@
                                     <action selector="savePic:" destination="LVB-YS-i5n" eventType="touchUpInside" id="H89-n7-89U"/>
                                 </connections>
                             </button>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="aP6-JW-PMd">
+                                <rect key="frame" x="188" y="404" width="118" height="31"/>
+                                <color key="minimumTrackTintColor" red="1" green="0.010051519906342232" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="maximumTrackTintColor" red="1" green="0.0" blue="0.060231345866727182" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="thumbTintColor" red="1" green="0.0" blue="0.060231345870000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="SliderChanged:" destination="LVB-YS-i5n" eventType="valueChanged" id="naC-D2-z1U"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="TLZ-L7-iBX">
+                                <rect key="frame" x="188" y="442" width="118" height="31"/>
+                                <color key="minimumTrackTintColor" red="0.0" green="0.80813999368686873" blue="0.022713686210302904" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="maximumTrackTintColor" red="0.0" green="0.8081399937" blue="0.02271368621" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="thumbTintColor" red="0.0" green="0.8081399937" blue="0.02271368621" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="SliderChanged:" destination="LVB-YS-i5n" eventType="valueChanged" id="Xxg-f9-vEz"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="fJL-NX-BeH">
+                                <rect key="frame" x="188" y="480" width="118" height="31"/>
+                                <color key="minimumTrackTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="maximumTrackTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="thumbTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="SliderChanged:" destination="LVB-YS-i5n" eventType="valueChanged" id="Zy9-ES-DXd"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gdS-aE-ipD">
+                                <rect key="frame" x="148" y="408" width="34" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hub-eY-YxB">
+                                <rect key="frame" x="148" y="446" width="34" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dkN-QH-GFz">
+                                <rect key="frame" x="148" y="484" width="34" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Sg-Ph-SlD">
+                                <rect key="frame" x="96" y="473" width="44" height="44"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -117,14 +157,20 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <outlet property="Red" destination="jB4-Tt-KT9" id="Nmk-7G-2Z2"/>
+                        <outlet property="BLabel" destination="dkN-QH-GFz" id="Lmr-oG-ebd"/>
+                        <outlet property="GLabel" destination="hub-eY-YxB" id="Gh4-Tk-1Dx"/>
+                        <outlet property="NowColor" destination="6Sg-Ph-SlD" id="gNp-Tt-HL6"/>
+                        <outlet property="RLabel" destination="gdS-aE-ipD" id="ITd-Nc-2PX"/>
                         <outlet property="bAlbum" destination="PgA-ZQ-TAX" id="STx-K8-IR3"/>
                         <outlet property="bCameraStart" destination="ZyR-5h-m0e" id="UGa-u6-3i7"/>
                         <outlet property="bSavePic" destination="FHh-5Z-edA" id="VNw-Xj-qpv"/>
+                        <outlet property="blue" destination="fJL-NX-BeH" id="P8W-YD-jiL"/>
                         <outlet property="cameraView" destination="icg-fg-8ys" id="cVa-zD-pGb"/>
                         <outlet property="canvas" destination="Axl-rQ-D95" id="fIC-g5-ZPe"/>
                         <outlet property="clearBtn" destination="KJo-vu-euu" id="vAW-V0-0x3"/>
+                        <outlet property="green" destination="TLZ-L7-iBX" id="KpR-PD-FqN"/>
                         <outlet property="label" destination="Q6B-ip-Loq" id="9VW-6T-Emy"/>
+                        <outlet property="red" destination="aP6-JW-PMd" id="oIr-ej-fCx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="btX-cZ-eVz" sceneMemberID="firstResponder"/>

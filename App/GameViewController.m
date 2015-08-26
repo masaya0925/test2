@@ -17,12 +17,55 @@
 @end
 
 @implementation GameViewController
+@synthesize red, green,blue,RLabel,GLabel,BLabel,NowColor;
+
+- (void)dealloc {
+    [red release];
+    [green release];
+    [blue release];
+    [RLabel release];
+    [GLabel release];
+    [BLabel release];
+    [NowColor release];
+    [super dealloc];
+}
+
+- (IBAction)SliderChanged:(id)sender {
+    //スライダーの現在値を取得
+    float R = 0;
+    float G = 0;
+    float B  = 0;
+    R = red.value;
+    G = green.value;
+    B  = blue.value;
+    
+    //ラベルに現在値を表示
+    RLabel.text = [NSString stringWithFormat:@"%2.f",R];
+    GLabel.text = [NSString stringWithFormat:@"%2.f",G];
+    BLabel.text = [NSString stringWithFormat:@"%2.f",B];
+    
+    NowColor = [UIColor colorWithRed:R green:G blue:B alpha:1];
+}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
     _label.text = @"Tap the [Start] to take a picture";
+    // スイッチの設置
+    UISwitch *sw = [[UISwitch alloc]init];
+    sw.center = CGPointMake(100, 50);
+    
+    // スイッチをONにする
+    sw.on = YES;
+    
+    // スイッチの値が変更されたときに呼ばれるメソッドを設定
+    [sw addTarget:self
+           action:@selector(drawLine:)
+ forControlEvents:UIControlEventValueChanged];
+    
+    // スイッチをビューに追加
+    [self.view addSubview:sw];
 }
 
 // カメラの撮影開始
@@ -179,7 +222,15 @@ didFinishPickingMediaWithInfo:(NSDictionary *)info {
     // 描画を終了します。
     UIGraphicsEndImageContext();
 }
-- (IBAction)Redcolor:(id)sender {
-    
-}
+- (void)switch_ValueChanged:(id)sender
+{
+    UISwitch *sw = sender;
+    if (sw.on) {
+         [[UIColor redColor] setStroke];
+        NSLog(@"スイッチがONになりました．");
+    } else {
+         [[UIColor blackColor] setStroke];
+        NSLog(@"スイッチがOFFになりました．");
+    }
+    }
 @end

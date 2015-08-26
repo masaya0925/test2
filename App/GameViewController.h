@@ -12,18 +12,23 @@
 
 @interface GameViewController : UIViewController<UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
-@property IBOutlet UIButton *bCameraStart;
-@property IBOutlet UIButton *bSavePic;
-@property IBOutlet UIButton *bAlbum;
-@property  IBOutlet UIImageView *canvas;
-@property  IBOutlet UIPickerView *clearBtn;
-@property IBOutlet UIButton *Red;
-@property IBOutlet UILabel *label;
-@property IBOutlet UIImageView *cameraView;
-
+@property (nonatomic, retain) IBOutlet UIButton *bCameraStart;
+@property (nonatomic, retain) IBOutlet UIButton *bSavePic;
+@property (nonatomic, retain) IBOutlet UIButton *bAlbum;
+@property  (nonatomic, retain) IBOutlet UIImageView *canvas;
+@property  (nonatomic, retain) IBOutlet UIPickerView *clearBtn;
+@property (nonatomic, retain) IBOutlet UILabel *label;
+@property (nonatomic, retain) IBOutlet UIImageView *cameraView;
+@property (nonatomic, retain) IBOutlet UISlider *red;
+@property (nonatomic, retain) IBOutlet UISlider *green;
+@property (nonatomic, retain) IBOutlet UISlider *blue;
+@property (retain, nonatomic) IBOutlet UILabel *RLabel;
+@property (retain, nonatomic) IBOutlet UILabel *GLabel;
+@property (retain, nonatomic) IBOutlet UILabel *BLabel;
+@property (retain, nonatomic) IBOutlet UIView *NowColor;
 - (IBAction)cameraStart:(id)sender;
 - (IBAction)savePic:(id)sender;
 - (IBAction)showAlbum:(id)sender;
 - (IBAction)clearBtnPressed:(id)sender;
-- (IBAction)Redcolor:(id)sender;
+- (IBAction)SliderChanged:(id)sender;
 @end
