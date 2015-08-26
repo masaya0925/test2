@@ -12,7 +12,7 @@
 @interface GameViewController () {
     UIBezierPath *bezierPath;
     UIImage *lastDrawImage;
-}
+  }
 
 @end
 
@@ -117,6 +117,7 @@ didFinishPickingMediaWithInfo:(NSDictionary *)info {
     bezierPath.lineCapStyle = kCGLineCapRound;
     bezierPath.lineWidth = 4.0;
     [bezierPath moveToPoint:currentPoint];
+  
 }
 
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
@@ -160,7 +161,7 @@ didFinishPickingMediaWithInfo:(NSDictionary *)info {
 
 - (void)drawLine:(UIBezierPath*)path
 {
-    // 非表示の描画領域を生成します。
+        // 非表示の描画領域を生成します。
     UIGraphicsBeginImageContext(self.canvas.frame.size);
     
     // 描画領域に、前回までに描画した画像を、描画します。
@@ -178,5 +179,7 @@ didFinishPickingMediaWithInfo:(NSDictionary *)info {
     // 描画を終了します。
     UIGraphicsEndImageContext();
 }
-
+- (IBAction)Redcolor:(id)sender {
+    
+}
 @end

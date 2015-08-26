@@ -53,7 +53,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZyR-5h-m0e">
-                                <rect key="frame" x="25" y="475" width="57" height="34"/>
+                                <rect key="frame" x="42" y="438" width="57" height="34"/>
                                 <state key="normal" title="Start">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -61,23 +61,8 @@
                                     <action selector="cameraStart:" destination="LVB-YS-i5n" eventType="touchUpInside" id="2Yi-Ku-ExQ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FHh-5Z-edA">
-                                <rect key="frame" x="135" y="479" width="51" height="30"/>
-                                <state key="normal" title="Save">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="savePic:" destination="LVB-YS-i5n" eventType="touchUpInside" id="H89-n7-89U"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zF7-sW-fYg">
-                                <rect key="frame" x="34" y="435" width="252" height="32"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PgA-ZQ-TAX">
-                                <rect key="frame" x="248" y="479" width="44" height="30"/>
+                                <rect key="frame" x="219" y="440" width="44" height="30"/>
                                 <state key="normal" title="Album">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -89,7 +74,7 @@
                                 <rect key="frame" x="25" y="28" width="270" height="400"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KJo-vu-euu">
-                                <rect key="frame" x="252" y="518" width="34" height="30"/>
+                                <rect key="frame" x="224" y="467" width="34" height="30"/>
                                 <state key="normal" title="clear">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -100,19 +85,46 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Axl-rQ-D95">
                                 <rect key="frame" x="25" y="28" width="270" height="400"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jB4-Tt-KT9">
+                                <rect key="frame" x="145" y="467" width="30" height="30"/>
+                                <state key="normal" title="Red">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Redcolor:" destination="LVB-YS-i5n" eventType="touchUpInside" id="XxH-Ux-tKb"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q6B-ip-Loq">
+                                <rect key="frame" x="25" y="533" width="270" height="25"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FHh-5Z-edA">
+                                <rect key="frame" x="45" y="467" width="51" height="30"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="savePic:" destination="LVB-YS-i5n" eventType="touchUpInside" id="H89-n7-89U"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <toolbarItems/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="Red" destination="jB4-Tt-KT9" id="Nmk-7G-2Z2"/>
                         <outlet property="bAlbum" destination="PgA-ZQ-TAX" id="STx-K8-IR3"/>
                         <outlet property="bCameraStart" destination="ZyR-5h-m0e" id="UGa-u6-3i7"/>
                         <outlet property="bSavePic" destination="FHh-5Z-edA" id="VNw-Xj-qpv"/>
                         <outlet property="cameraView" destination="icg-fg-8ys" id="cVa-zD-pGb"/>
                         <outlet property="canvas" destination="Axl-rQ-D95" id="fIC-g5-ZPe"/>
                         <outlet property="clearBtn" destination="KJo-vu-euu" id="vAW-V0-0x3"/>
-                        <outlet property="label" destination="zF7-sW-fYg" id="DHi-Ho-A0F"/>
+                        <outlet property="label" destination="Q6B-ip-Loq" id="9VW-6T-Emy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="btX-cZ-eVz" sceneMemberID="firstResponder"/>

@@ -16,8 +16,8 @@
 @property IBOutlet UIButton *bSavePic;
 @property IBOutlet UIButton *bAlbum;
 @property  IBOutlet UIImageView *canvas;
-@property  IBOutlet UIButton *clearBtn;
-
+@property  IBOutlet UIPickerView *clearBtn;
+@property IBOutlet UIButton *Red;
 @property IBOutlet UILabel *label;
 @property IBOutlet UIImageView *cameraView;
 
@@ -25,5 +25,5 @@
 - (IBAction)savePic:(id)sender;
 - (IBAction)showAlbum:(id)sender;
 - (IBAction)clearBtnPressed:(id)sender;
-
+- (IBAction)Redcolor:(id)sender;
 @end

@@ -32,7 +32,7 @@
     SKAction* fadeinout = [SKAction sequence:actions];
     [StartButton runAction:[SKAction repeatActionForever:fadeinout]];
     
-
+    self.backgroundColor = [SKColor redColor];
 }
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
